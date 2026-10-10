@@ -1,11 +1,9 @@
 services:
-  # 1. Full-Stack Unified Service (FastAPI + React Dashboard + WebSockets + DB)
   - type: web
     name: fraudshield-engine
     runtime: python
     plan: free
-    region: oregon
-    buildCommand: "pip install -r requirements.txt && cd frontend && npm install && npm run build && cd .."
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
     envVars:
       - key: MODEL_PATH
