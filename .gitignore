@@ -1,0 +1,33 @@
+# Large datasets (exceeds GitHub 100MB file limit)
+creditcard.csv
+*.tmp
+
+# Node.js
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.npm
+
+# Python cache & virtualenvs
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Databases
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Environment & credentials
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
